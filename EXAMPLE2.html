@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thired example of css</title>
+
+    <style>
+        #x {
+            /*box-shadow: x y blur thick color;*/
+            box-shadow: -4px -4px aqua;
+            background-color: white;
+        }
+
+        #y {
+            box-shadow: 5px 0 orange;
+            background-color: aqua;
+        }
+
+        #z {
+            box-shadow: 0 0 15px 5px black, 0 0 10px 4px red;
+            background-color: yellow;
+        }
+
+        /* Multi shadow aslo possible*/
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        #t {
+            text-shadow: 2px 2px hotpink;
+
+        }
+
+        #i {
+            box-shadow: inset 0 0 15px 5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Praatice on the ID selectors</h2>
+    <!-- This selector used to defined styles/to apply styles for specific element (only 1 element)
+     It is same as the inline styles. 
+     
+     Syn:
+            #ID{
+                    property:value;
+
+               }
+
+    Mapping: USing "id" attribute we hab=ve to map "id selector to element".
+            
+            < tag id="ID" .....>
+    
+    When we write a program on the html and i we want to changed the property of the data wiht the calss or id and the  id or the class are the same identifire so we can used the in this seniori we used the inline css or the id of the JS
+            
+            -->
+
+
+    <!-- Next practice for the Shadow  -->
+    <div id="x">
+        <h2>Web sit is the best for dispalyed the data </h2>
+    </div>
+
+    <div id="y">
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, molestiae!</h2>
+    </div>
+    <div id="z">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h2>
+    </div>
+    <br>
+    <!-- In the id we only used one time or one name at the time  -->
+    <!-- The id are write the only one time on the rpogram with the same name -->
+
+    <img src="/img/img2.webp" id="z" alt="Naruto" width="200px" height="200px"> <br>
+    <!-- Text shadow practice -->
+    <h1 id="t">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, sed.</h1>
+    <div id="i">
+        <h2>Rohit</h2>
+    </div>
+</body>
+
+</html>
