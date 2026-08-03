@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* h1 {
+            background-color: orangered;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-shadow: 10px 15px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h2 {
+            background-color: orangered;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-shadow: 10px 15px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h3 {
+            background-color: orangered;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-shadow: 10px 15px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h4 {
+            background-color: orangered;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-shadow: 10px 15px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h5 {
+            background-color: orangered;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h6 {
+            background-color: orangered;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-shadow: 10px 15px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }*/
+
+        /* using the different-different tah selector so replced with the group selector*/
+
+        h1,
+        /* group selecotors*/
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            background-color: orangered;
+            color: rgb(255, 255, 255);
+            width: 50%;
+            text-align: center;
+            text-shadow: 10px 15px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input:focus {
+            box-shadow: 0 0 5px 2px #00f;
+            outline: 2px solid red;
+        }
+
+        /* :blur 
+        {
+          -----------------
+        } */
+
+        a:link {
+            color: hotpink;
+        }
+
+        a:active {
+            color: orangered;
+        }
+
+        a:hover {
+            background-color: black;
+        }
+
+        a:visited {
+            color: greenyellow;
+        }
+
+        a:hover {
+            background-color: black;
+        }
+
+        /*ol li {
+            color: red;
+        }*/
+
+        /*ol li:first-child {
+            color: red;
+        }
+
+        ol li:last-child {
+            color: #00f;
+        }*/
+
+        /*ol li:nth-child(10) {
+            color: red;
+        }*/
+
+        /* ol li:nth-child(5),
+        ol li:nth-child(9) {
+            color: red;
+        } */
+
+        ol li:nth-child(odd) {
+            color: red;
+        }
+
+        ol li:nth-child(even) {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+         Group selector:
+                       ==> group of selector is called group selector.
+                       ==> This selectotr is used to define the common properties for other selector.
+                       ==> SO purpose of gorup selector to avoid code redundancy in other selectors.
+
+                    Syn:
+    (any selector type write name here )sel1,sle2,sel3...{
+                            property:value;
+                        }
+
+    
+    
+    -->
+
+    <!-- 
+        Pseudo slectors
+                1. classes  2. elements
+
+        pseudo classes:
+                       ==> Pseudo classes I am not applying the styles directly, Based on the situation the slectors are applying styles. 
+                       ==> Pseudo classes are represented with (:) symboles.
+                       ==> Pseudo classes all are predefined classes.
+
+                       Syn:-
+                            selector:p-class
+                            {
+                                property:value;
+                                -----
+                            }
+                        Note: Before the pseudo classs write the selector name there selector act like the assoceated. When we not write the selector befor the pseudo class the pseudo aplyed on the every maximum tag whic is present on or html body blindely.
+
+                        List: 
+
+                            :focus, :blur, :link, :visited, :active, :hover, :disabled, :enabled, :first-child, :last-child, :nth-child, :is (), :has (), :not ()..etc.
+
+    -->
+
+    <h1>Hello! World</h1>
+    <h2>Hello! World</h2>
+    <h3>Hello! World</h3>
+    <h4>Hello! World</h4>
+    <h5>Hello! World</h5>
+    <h6>Hello! World</h6>
+    <h1>Hello! World</h1>
+    <h2>Hello! World</h2>
+    <h3>Hello! World</h3>
+    <h4>Hello! World</h4>
+    <h5>Hello! World</h5>
+    <h6>Hello! World</h6> <br> <br>
+
+    <h2>Demo on the pseudo class</h2> <br><br>
+
+    <input type="text" placeholder="first number">
+    <input type="text" placeholder="MC">
+    <input type="password" placeholder="BC">
+    <br> <br><br>
+    <a href="">Home</a>
+    <a href="#">Product</a>
+    <a href="#">Services</a>
+    <a href="#">Contact us</a>
+
+    <br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repudiandae modi nemo ea expedita tenetur magni
+        similique. Ad consequuntur animi odio mollitia aliquid blanditiis excepturi quos minus, perspiciatis nam totam
+        culpa et voluptatum perferendis obcaecati sapiente officia architecto quas voluptatem. Dolore sint corporis
+        mollitia tempora quaerat quidem esse officiis minus totam vero veniam, alias quia natus aut vitae ducimus
+        tempore quam, nemo reprehenderit. Fuga cumque repellendus sequi quaerat, tempora qui, obcaecati officiis non
+        tenetur temporibus recusandae dolorum nesciunt tempore explicabo reiciendis. Nulla itaque quasi, eum, cumque
+        quos mollitia iste vitae sint nemo accusantium sit possimus ab, nihil voluptate animi. Itaque?</p>
+
+    <ol>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+    </ol>
+
+
+</body>
+
+</html>

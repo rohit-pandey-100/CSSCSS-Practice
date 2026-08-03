@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ::before {
+            /*this is wrok for only paird tag*/
+            content: 'hi';
+        }
+
+        ::after {
+            content: 'bye';
+        }
+
+        [type="text"]::placeholder {
+            color: aqua;
+        }
+
+        p::first-letter {
+            color: black;
+            font-size: 3em;
+        }
+
+        p::first-line {
+            color: hotpink;
+        }
+
+        ol li::marker {
+            color: red;
+        }
+
+        ul li::marker {
+            color: blue;
+        }
+
+        ::selection {
+            background-color: hotpink;
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Pseudo elements:
+                        ==>Pseudo elements are predefined selectors.
+                        ==>Pseudo elements are represented with ::
+                        ==>Pseudo elements are used to applyed the styles for the perticular portion of the elements.
+
+                Syn:
+                    Selectors ::P-element
+                    {
+                        property:value;
+                    }
+
+        List:
+             ::before, ::after, ::first-letter, ::first-line, ::selection, ::marker, ::placeholder, ::cue, ::file-selector, ::grammar-error, ::spelling-serror
+    
+         -->
+
+
+    <h2>Pseudo elements demo </h2>
+    <h3>Ram</h3>
+    <h3>Sama</h3>
+    <h3>Rahim</h3>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque velit nisi earum. Dolores eius perspiciatis
+        maxime quis corrupti placeat molestiae cupiditate hic, nesciunt sapiente, assumenda nostrum esse ipsa officiis
+        odio rerum eligendi, a nulla nobis. Earum placeat dicta, tempore magnam nesciunt aliquid provident autem saepe
+        ut iusto dolorum, repellat vitae officia. Dicta error atque magni mollitia. Quae ex doloribus, nemo, maxime
+        molestiae sunt illum enim provident incidunt dolor quo quisquam ipsum! Soluta optio placeat et eius atque porro
+        sunt ullam officiis nesciunt officia! Natus, consectetur, deserunt ipsam ad animi aperiam eaque ducimus quidem
+        sint est esse fuga, repellat cupiditate illo?</p>
+
+    <ol>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+    </ol>
+
+    <ul>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol li:nth-child(1n+4)
+        /* like a for loop*/
+
+        /* we can used the formula aslo inside the */
+            {
+            color: skyblue;
+
+        }
+
+        /*h2:disabled {
+            color: red;
+        }
+
+        h2:enabled {
+            color: blue;
+        }*/
+
+
+        /* this is the alternative for teh group selector*/
+        :is(#i1, #i2, #i3) {
+            color: orange;
+        }
+
+        div:not(.d1) {
+            color: hotpink;
+        }
+
+        .card:has(img) {
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h2 id="i1">Disabled Mode</h2>
+
+    <ol>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+        <li>Google</li>
+    </ol>
+
+    <h3 id="i2">:is used for group alternative</h3>
+
+    <div class="d1"> Demo for the :not </div>
+    <div class="d2"> Demo for the :not </div>
+    <div class="d3"> Demo for the :not </div>
+
+    <br>
+
+    <div class="card">
+        <img src="/img/img2.webp" alt="Naruto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae provident nisi. Saepe enim dicta
+            nobis quaerat odio repellendus nostrum adipisci, tempore iusto dignissimos dolore facere magnam porro illo
+            possimus omnis libero ratione tempora quidem ducimus odit sapiente! Commodi facere vitae necessitatibus,
+            voluptate incidunt aspernatur laboriosam, sunt, modi et est laborum quis? Accusantium consequuntur est omnis
+            dolor eius! Et adipisci quam ipsum esse, placeat vitae ipsam saepe necessitatibus eligendi ad
+            exercitationem, molestias ipsa doloribus perferendis iste quaerat nisi earum? Fuga ratione, sunt in
+            exercitationem voluptas perferendis voluptatem ipsam quas quisquam nemo nostrum ullam. Aliquam aperiam
+            dolorum similique quam enim quo.</p>
+
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam itaque iure officia odit ut, nihil
+            aspernatur nam illo accusamus quas commodi dolore esse facilis consectetur explicabo doloremque architecto
+            nesciunt, ipsam expedita sunt odio deleniti! Sapiente eligendi magnam nemo, ipsum culpa enim saepe quae
+            earum quos exercitationem harum at amet rerum nesciunt molestiae numquam esse possimus qui est magni nulla
+            porro. Ipsa doloremque veniam, voluptatem culpa ipsam, eaque totam perferendis repellat, excepturi
+            consequuntur esse corporis tenetur possimus laboriosam eveniet dignissimos dolorem ad quisquam quod dolore!
+            Vero necessitatibus amet, non molestiae, doloremque consequatur et tempore obcaecati illum nobis illo
+            dignissimos, maiores debitis.</p>
+    </div>
+</body>
+
+</html>
