@@ -1,0 +1,58 @@
+/* Defining styles for grid app*/
+
+.grid-box {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    /*12Rx1C*/
+
+    /*grid-template-columns: repeat(4, 1fr);*/
+    grid-template-columns: repeat(auto-fill, minmax(200px ifr));
+    /* A grid have only 12 columns we can declared only 12 columns */
+    /* the repeat is act like the loop */
+    /* 1fr 1fr 1fr 1fr;*/
+    /* 1fr meaning the onr columns select the 100% and if ther are two 1fr 1fr are so the divided the two columns are 50% 50% */
+    /*200px 200px 300px 200px;
+        20% 20%*/
+    /* Size provide in this prantheses */
+    /*grid-template-rows: repeat(3, 250px);*/
+    grid-template-rows: auto auto auto;
+    /*column-gap: 50px;
+    row-gap: 50px;*/
+    grid-gap: 10px;
+
+
+    /* background-color: gray;
+    padding: 10PX;*/
+}
+
+.grid-item {
+    transition-duration: 750ms;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px 10px 0 0;
+}
+
+.grid-item:hover {
+    filter: brightness(120%);
+    /* blur(), brightness(), contrast(), drop-shadow(), graysacle(), hue-rotate(), invert(), opacity(), sepia(), saturate() */
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+    background-color: black;
+}
+
+.grid-item a:hover {
+    color: yellow;
+}

@@ -1,0 +1,32 @@
+/* Defining styles for grid app*/
+
+.grid-box {
+    width: 80%;
+    display: grid;
+    /*12Rx1C*/
+
+    grid-template-columns: repeat(4, 1fr);
+    /* A grid have only 12 columns we can declared only 12 columns */
+    /* the repeat is act like the loop */
+    /* 1fr 1fr 1fr 1fr;*/
+    /* 1fr meaning the onr columns select the 100% and if ther are two 1fr 1fr are so the divided the two columns are 50% 50% */
+    /*200px 200px 300px 200px;
+        20% 20%*/
+    /* Size provide in this prantheses */
+    grid-template-rows: repeat(3, 250px);
+    /*column-gap: 50px;
+    row-gap: 50px;*/
+    grid-gap: 15px;
+
+    /* background-color: gray;
+    padding: 10PX;*/
+}
+
+.grid-item {
+    transition-duration: 750ms;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.grid-item:hover {
+    transform: translate(10px, 10px);
+}

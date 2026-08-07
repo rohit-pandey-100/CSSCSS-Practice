@@ -1,0 +1,66 @@
+<!--
+class selector
+=>this selector used to defined styles/to apply common styles for group of elements (no of eles) or
+common styles for group tags.
+    Syn:
+		.class-name{
+		  property:value;
+		  ...
+		}
+
+mapping:
+=>using "class"	attribute we have to map class selectors to elements.
+    <tag  class="class-name" ...>
+    <tag  class="class-name1  class-name2..." ...>
+	
+Note:
+1.When you are mapping multiple classes the execution order based on designing order (top->bottom), But not mapping order.
+2.The purpose of using multiple classes to avoid code redundancy.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+
+    <style>
+        .x {
+            font-size: 38px;
+            font-style: italic;
+            /*normal*/
+            font-weight: bold;
+            /*normal*/
+        }
+
+        .y {
+            font-family: Forte, 'Curlz MT', Gabriola;
+        }
+
+        .z {
+            color: red;
+        }
+
+        /*
+	  .i{	color:blue; }
+	  .j{	color:green; }	*/
+    </style>
+
+</head>
+
+<body>
+    <h2>demo on multiple classes</h2>
+
+    <h2 class="x y">GNU General Public License as published by the Free Software Foundation</h2>
+
+    <h2 class="x z">GNU General Public License as published by the Free Software Foundation</h2>
+
+    <h2 class="y z">GNU General Public License as published by the Free Software Foundation</h2>
+
+    <h2 class="x y z">GNU General Public License as published by the Free Software Foundation</h2>
+
+</body>
+
+</html>

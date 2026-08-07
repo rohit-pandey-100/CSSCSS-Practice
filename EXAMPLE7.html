@@ -1,0 +1,55 @@
+<!--
+class selector
+=>this selector used to defined styles/to apply common styles for group of elements (no of eles) or
+common styles for group tags.
+    Syn:
+		.class-name{
+		  property:value;
+		  ...
+		}
+
+mapping:
+=>using "class"	attribute we have to map class selectors to elements.
+    <tag  class="class-name" ...>
+    <tag  class="class-name1  class-name2..." ...>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+
+    <style>
+        .c1 {
+            border-radius: 20px;
+        }
+
+        .c2 {
+            border-radius: 10px 100px;
+        }
+
+        .c3 {
+            border-radius: 5px 40px 10px 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>demo on class selector</h2>
+
+    <img src="images/baby.webp" class="c1" width="200">
+    <img src="images/bird.jpg" class="c1" width="200">
+    <img src="images/panda.jpg" class="c2" width="200">
+    <img src="images/sunset.webp" class="c2" width="200">
+    <img src="images/tiger.jpg" class="c3" width="200">
+    <br>
+    <button class="c3">Search Bus</button>
+    <input type="text" class="c3">
+
+</body>
+
+</html>
