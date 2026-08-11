@@ -1,0 +1,67 @@
+<!--
+attribute selector
+=>this selector used to defined styles/to apply  common styles for group elements based on specified attribute.
+    Syn:
+		[attribute] /* Or [attribute=val] Or sel[attribute] Or sel[attribute=val] */
+		{
+		   property:value;
+		   ...
+		}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+
+    <style>
+        [type="text"] {
+            color: red;
+        }
+
+        [type="password"] {
+            color: blue;
+        }
+
+        [align="center"] {
+            letter-spacing: 15px;
+            word-spacing: 20px;
+        }
+
+        /* Or
+	  [align]{ ... }
+		Or
+	  h2[align]{ ... }
+		Or
+	  h2[align="center"]{ ... }
+		Or
+	  #i[align="center"]{ ... }	  
+		Or
+	  .c[align="center"]{ ... }	  	  
+		Or
+	  div h2[align="center"]{ ... }	  	  
+	  */
+    </style>
+
+</head>
+
+<body>
+    <h2>demo on attribute selector</h2>
+    <input type="text" placeholder="Firstname">
+    <input type="text" placeholder="Lastname">
+    <input type="password" placeholder="Password">
+
+    <h2 align="center">GNU General Public License as publish</h2>
+
+    <h2 align="right">GNU General Public License as publish</h2>
+
+    <p align="center">GNU General Public License as publish</p>
+
+    <div align="center">GNU General Public License as publish</div>
+
+</body>
+
+</html>

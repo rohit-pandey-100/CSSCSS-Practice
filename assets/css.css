@@ -1,0 +1,74 @@
+/* Css new features */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* vh means view port means the how many hight of the browse the same height are smae as the body tag height size*/
+
+    /* background-color: ; don't changed the position this is the fixed position 
+    background-image: ;
+    background-repeat: ;
+    background-position: ;
+    background-size: ;
+    background-attachment: ; */
+
+
+    /* Se background images*/
+    background: #AAA url(/img/img2.webp) no-repeat center center/ cover fixed;
+    /* repeat, no-repeat, repeat-x, repeat-y*/
+    /*left, right, center, */
+    /* own size/auto/cover*/
+    /*bydefalut scroll/fixed */
+    /* #AAA this is called mono color */
+
+}
+
+/* Set background geadients*/
+/*Types:
+        1). linear-gradient()
+        2). radial-gradient()
+        3). conic-gradient()
+        4). repeat-linear-gradient()
+        5). repeat-radial-gradient()
+        6). repeat-conic-gradient()
+*/
+.div1 {
+
+    height: 200px;
+    color: aliceblue;
+    /*background: linear-gradient(dir,c1,c2,c3,......);*/
+    /*background: linear-gradient(to bottom, red, blue, aqua);*/
+    background: linear-gradient(45deg, aqua, blue, aqua);
+    /* to right, to bottom, to left, to top, to right top, to right bottom, to left bottom, to left top, Ndeg(N=number)*/
+    /*background: linear-gradient(45deg, aqua 50%, blue 20%, aqua);*/
+
+
+}
+
+.div2 {
+    height: 200px;
+    color: aliceblue;
+    /*background: linear-gradient(dir,c1,c2,c3,......);*/
+    /*background: linear-gradient(to bottom, red, blue, aqua);*/
+    /*background: linear-gradient(45deg, aqua, hotpink, aqua);*/
+    /* to right, to bottom, to left, to top, to right top, to right bottom, to left bottom, to left top, Ndeg(N=number)*/
+    /*background: linear-gradient(45deg, aqua 50%, blue 20%, aqua);*/
+    /*background: radial-gradient(circle, yellow 40%, red, orange);*/
+    /* shape => circle, ellipes, %*/
+    background: radial-gradient(circle at top, yellow 40%, red, orange);
+    /* circle at top, circle at bottom, circle at right, circle at left,.....*/
+    opacity: 0.6
+
+}
+
+.div3 {
+    height: 200px;
+    color: aliceblue;
+    background: conic-gradient(from 45deg, aqua, orange, white);
+    /* from deg/ at x y */
+
+}

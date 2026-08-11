@@ -1,0 +1,68 @@
+<!--
+child selector
+=>this selector used to defined styles/to apply  common styles for Child, Grand child, great grand child etc... positioned elements. 
+=>also called "descended" selector.
+    Syn:
+		gptag  ptag  ctag{
+		  property:value;
+		  ...
+		}
+		#id  ctag{		}
+		.c  ctag{		}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+
+    <style>
+        nav a {
+            color: hotpink;
+            text-decoration: none;
+            /* underline, line-through, overline*/
+        }
+
+        /* #nav1 a{	}
+		#nav2 a{	} */
+
+        ul li a {
+            color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>demo on child selector</h2>
+    <a href="#">goto page1</a> <br>
+    <a href="#">goto page2</a>
+    <br>
+    <nav id="nav1">
+        <a href="#">goto page3</a> <br>
+        <a href="#">goto page4</a> <br>
+        <strong>
+            <a href="#">goto page5</a> <br>
+            <a href="#">goto page6</a> <br>
+        </strong>
+    </nav>
+
+    <ul>
+        <li> <a href="#">goto page7</a> </li>
+        <li> <a href="#">goto page8</a> </li>
+        <li> <a href="#">goto page9</a> </li>
+        <a href="#">goto page10</a>
+    </ul>
+
+    <nav id="nav2">
+        <a href="#">google</a> <br>
+        <a href="#">youtube</a> <br>
+        <a href="#">facebook</a> <br>
+    </nav>
+
+</body>
+
+</html>
