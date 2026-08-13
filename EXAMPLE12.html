@@ -13,25 +13,25 @@ attribute selector
 <html lang="en">
 
 <head>
-    <title>CSS</title>
-    <meta charset="UTF-8">
-    <link rel="icon" href="logo.png" />
+  <title>CSS</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo.png" />
 
-    <style>
-        [type="text"] {
-            color: red;
-        }
+  <style>
+    /*[type="text"] {
+      color: red;
+    }
 
-        [type="password"] {
-            color: blue;
-        }
+    [type="password"] {
+      color: blue;
+    }
 
-        [align="center"] {
-            letter-spacing: 15px;
-            word-spacing: 20px;
-        }
+    [align="center"] {
+      letter-spacing: 15px;
+      word-spacing: 20px;
+    }*/
 
-        /* Or
+    /* Or
 	  [align]{ ... }
 		Or
 	  h2[align]{ ... }
@@ -44,12 +44,30 @@ attribute selector
 		Or
 	  div h2[align="center"]{ ... }	  	  
 	  */
-    </style>
+    h2[align="center"] {
+      color: blue;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    [type="text"] {
+      color: blue;
+    }
+
+    [type="password"] {
+      color: hotpink;
+    }
+
+    [align="center"] {
+      letter-spacing: 15px;
+      word-spacing: 20px;
+    }
+  </style>
 
 </head>
 
 <body>
-    <h2>demo on attribute selector</h2>
+  <!-- <h2>demo on attribute selector</h2>
     <input type="text" placeholder="Firstname">
     <input type="text" placeholder="Lastname">
     <input type="password" placeholder="Password">
@@ -60,7 +78,20 @@ attribute selector
 
     <p align="center">GNU General Public License as publish</p>
 
-    <div align="center">GNU General Public License as publish</div>
+    <div align="center">GNU General Public License as publish</div> -->
+
+  <h2 align="center">Demo on the attribute selector </h2>
+  <input type="text" placeholder="Firstname">
+  <input type="text" placeholder="Lastname">
+  <input type="password" palceholder="Password">
+  <div align="center">Selects that element only when the attribute has that specific value</div>
+
+  <h2 align="center">GNU General Public License as publish</h2>
+
+  <h2 align="right">GNU General Public License as publish</h2>
+
+  <p align="center">GNU General Public License as publish</p>
+
 
 </body>
 
