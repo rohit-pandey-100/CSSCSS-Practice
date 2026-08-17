@@ -1,0 +1,151 @@
+<!--
+pseudo selectors
+	1.classes	2.elements
+
+pseudo classes
+=>Pseudo classes are not applying the styles directly, Based on the situation the selectors are applying styles.
+=> Pseudo classes are represented with : 
+=>Pseudo classes all are predefined classes.
+	Syn:-
+		selector:p-class{
+		  property:value;
+		  ......
+		}
+list:
+	:focus, :blur, :link, :visited, :active, :hover
+	:disabled, :enabled, :first-child, :last-child,
+	:nth-child, 
+	:is(), :has(), :not()
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/img/logo1.avif">
+
+    <style>
+        input:focus {
+            /* box-shadow:0 0 5px 2px #00F; */
+            outline: 2px solid red;
+        }
+
+        /* :blur{ ... } */
+
+        a:link {
+            color: teal;
+        }
+
+        a:visited {
+            color: lime;
+        }
+
+        a:hover {
+            background: #000;
+            color: #FFF;
+        }
+
+        a:active {
+            color: orange;
+        }
+
+        /*
+	  ol li:first-child{
+		color:red;
+	  }
+	  ol li:last-child{
+	    color:blue;
+	  }	 
+	  ol li:nth-child(7){ } Or  
+	  ol li:nth-child(5),ol li:nth-child(9){
+	    color:green;
+	  }	Or	  
+	  ol li:nth-child(2n+3){
+	    color:red;
+	  } */
+
+        ol li:nth-child(odd) {
+            background: blue;
+            color: cyan;
+        }
+
+        ol li:nth-child(even) {
+            background: cyan;
+            color: blue;
+        }
+
+        :disabled {
+            color: darkgray;
+        }
+
+        :enabled {
+            color: blue;
+        }
+
+        :is(#i1, #i2) {
+            color: hotpink;
+        }
+
+        div:not(.d1) {
+            color: rgb(123, 108, 255);
+        }
+
+        .card:has(img) {
+            border: 3px solid blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>demo on Pseudo Classes</h2>
+    <input type="text">
+    <input type="text">
+    <input type="password">
+    <br>
+    <a href="/EXAMPLE1.html">Home</a>
+    <a href="">Products</a>
+    <a href="">Services</a>
+    <a href="">ContactUs</a>
+    <br>
+
+    <ol>
+        <li>Intel</li>
+        <li>Mocrosoft</li>
+        <li>Google</li>
+        <li>Apple</li>
+        <li>Cisco</li>
+        <li>SAP</li>
+        <li>Salesforce</li>
+        <li>AMD</li>
+        <li>IBM</li>
+        <li>ADP</li>
+        <li>HP</li>
+        <li>Opentext</li>
+    </ol>
+    <h1 id="i1">TCS</h1>
+    <h2 id="i2">Infosys</h2>
+
+    <div class="d1">Lenovo</div>
+    <div class="d2">HP</div>
+    <div class="d3">Asus</div>
+    <p class="d1">Aser</p>
+
+
+    <div class="card">
+        <img src="/img/img3.webp">
+        <p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General
+            Public License as published by the Free Software Foundation; either version 3 of the License, or at your
+            option any later version.</p>
+    </div>
+    <div class="card">
+        <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
+            implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+            for more details.</p>
+    </div>
+
+</body>
+
+</html>

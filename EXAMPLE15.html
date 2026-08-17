@@ -1,0 +1,140 @@
+<!--
+pseudo elements
+=>Pseudo elements all are predefined selectors.
+=>Pseudo elements are represented with ::
+=> Pseudo elements are used to apply the styles for particular portion of the element.
+	Syn:-
+		selector::p-element{
+		  property:value;
+		  ......
+		}
+list:
+	::before, ::after, ::first-letter, ::first-line,
+	::selection, ::marker, ::placeholder, ::cue,
+	::file-selector-button, ::grammar-error,
+	::spelling-error
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/img/logo1.avif" />
+
+    <style>
+        /* styles for before tag open */
+        h3::before {
+            content: '✳ ';
+        }
+
+        /* styles for after tag closing */
+        h3::after {
+            content: '👍';
+        }
+
+        /* styles for placeholder of input elements */
+        [type="text"]::placeholder {
+            color: pink;
+            text-align: center;
+        }
+
+        /* styles for 1st character of element */
+        p::first-letter {
+            background: black;
+            color: white;
+            font-size: 2em;
+        }
+
+        /* styles for 1st line of element */
+        p::first-line {
+            color: teal;
+        }
+
+        /* styles for numbers, bullets, summary */
+        ::marker
+
+        /* ol li::marker or ul li::marker*/
+            {
+            color: blue;
+        }
+
+        /* stlyes for selected text */
+        ::selection {
+            background: green;
+            color: yellow;
+        }
+
+        /* styles for file uploading button */
+        ::file-selector-button {
+            background: red;
+            color: white;
+            border: 0;
+        }
+
+        /* stlyes for audio/video sub titles */
+        ::cue {
+            /*audio::cue{ }	or  video::cue{ } */
+            background: red;
+            color: white;
+        }
+
+        /* stlyes for grammer mistakes */
+        ::grammer-error {
+            text-decoration: 1px solid blue;
+        }
+
+        /* stlyes for spelling mistakes */
+        textarea::spelling-error {
+            text-decoration: 2px dotted underline red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>demo on Pseudo elements</h2>
+    <h3>Rama</h3>
+    <h3>Sama</h3>
+    <h3>Rahim</h3>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+
+    <p>Uruguay might be tiny, but it's truly mighty when it comes to cattle. This South American nation, home to around
+        3.4 million people, has over 12 million cows grazing its green pastures. That's roughly four cows for every
+        person — one of the highest cattle-to-human ratios in the world!</p>
+    <p>So, why so many cows? Uruguay's wide grasslands and mild climate make it ideal for livestock. Cattle farming has
+        been the backbone of the economy for centuries, powering its famous beef exports. In fact, Uruguay is one of the
+        world's top beef exporters, sending meat to over 100 countries — all from a country smaller than many Indian
+        states.</p>
+
+    <ol>
+        <li>Intel</li>
+        <li>Mocrosoft</li>
+        <li>Google</li>
+        <li>Apple</li>
+        <li>Cisco</li>
+        <li>AMD</li>
+    </ol>
+    <ul>
+        <li>Salesforce</li>
+        <li>SAP</li>
+        <li>IBM</li>
+        <li>ADP</li>
+        <li>HP</li>
+        <li>Opentext</li>
+    </ul>
+
+    <input type="file">
+    <br>
+    <!-- type somthing here to spelling & grammer styles -->
+    <textarea rows="5" cols="50"></textarea>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
