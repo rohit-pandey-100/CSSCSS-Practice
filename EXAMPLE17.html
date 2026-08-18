@@ -1,0 +1,59 @@
+<!--
+CSS Precedence (Specificity)
+=>Css styles are applied in the following order (lower priority to higher priority).
+=>The higher priority style overrides the same property’s value of the lower priority.
+	1.Browser default style (low)
+	2.Universal  (8)
+	3.Tag selector (7)
+	4.Direct child selector (6)
+	5.Child selector (5)
+	6.Class selector (4)
+	7.Attribute selector (3)
+	8.ID selector  (2)
+	9.inline styles (high)
+
+
+Note: “!important” is used to override the original style precedence.
+	Syn:	selector{
+			  property:value  !important;
+			  …
+			}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        h2 {
+            color: red;
+        }
+
+        /* 1st */
+        #i {
+            color: green;
+        }
+
+        /* 3rd */
+        .c {
+            color: blue;
+        }
+
+        /* 2nd */
+
+        h1 {
+            background: yellow !important;
+            /* top most priority*/
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="i" class="c" style="color:hotpink; ">demo on Selector Precedence (Specificity)</h2>
+
+    <h1 style="background:lime;color:blue;">demo on !important option</h1>
+
+</body>
+
+</html>
