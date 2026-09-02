@@ -1,0 +1,80 @@
+<!--
+margins
+=>Margins are used to provide the gap between one element to another element.
+=>Margins also used to display elements @ particular position of the web page.
+	Syn:
+			margin:TMpx RMpx BMpx LMpx;
+			margin:auto;
+
+position
+=>Position property used to specify which type of margin are using.
+	Syn:
+	   position:static/absolute/relative/fixed/sticky;
+	   
+absolute => Absolute taking the measurements from the starting point of parent/container 
+
+relative => relative taking the measurements from the end point of relative(Previous) element.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            /*
+		posiiton:relative;
+		margin-left:50px;
+		margin-top:50px; */
+        }
+
+        .i1 {
+            margin: 50px 0 0 50px;
+        }
+
+        .i2 {
+            margin: 150px 0 0 150px;
+        }
+
+        .i3 {
+            margin: 250px 0 0 250px;
+        }
+
+        div {
+            position: absolute;
+            margin-left: 800px;
+            margin-top: 150px;
+            border: 5px solid red;
+        }
+
+        button {
+            position: relative;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="images/tiger.jpg" class="i1">
+    <img src="images/baby.webp" class="i2">
+    <img src="images/sunset.webp" class="i3">
+
+    <h1>demo on margins & postion</h1>
+
+    <div>
+        <button>0</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+    </div>
+</body>
+
+</html>
