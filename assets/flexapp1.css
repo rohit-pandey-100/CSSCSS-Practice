@@ -1,0 +1,34 @@
+/* defining styles for flex app */
+
+.flex-box {
+    width: 70%;
+
+    display: flex;
+    /* row */
+    flex-direction: row;
+    /* row-reverse, column, column-reverse */
+    flex-wrap: wrap;
+    /*nowrap*/
+    /*gap:200px;  <= fixed space */
+    /* alignment changing  
+	justify-content:start/center/end; */
+    /* dynamic space */
+    justify-content: space-evenly;
+    /*space-between,space-around */
+
+    padding: 10px;
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
+}
+
+.flex-item {
+    width: 20%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flex-item:hover {
+    background: #000;
+    color: #FFF;
+}

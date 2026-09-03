@@ -1,0 +1,51 @@
+/* defining styles for flex app */
+.flex-box {
+    width: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    padding: 10px;
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
+}
+
+.flex-item {
+    width: 20%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.flex-item:hover {
+    box-shadow: 0 0 10px 3px black;
+}
+
+.flex-item img {
+    width: 100%;
+    transition: 1s;
+}
+
+.flex-item img:hover {
+    transform: scale(1.5);
+}
+
+.flex-item h2 {
+    color: blue;
+    text-align: center;
+}
+
+.flex-item div:nth-child(3) {
+    color: red;
+}
+
+.flex-item h3 {
+    font-size: 22px;
+    margin: 10px;
+}
+
+.flex-item del {
+    color: #999;
+}
